@@ -1,0 +1,4 @@
+Run_Sda
+--train-data "/home/du/Dropbox/workspace/DL/cmds/train.pickle.gz,partition=600m,stream=true,random=true"  --nnet-spec "784:1024:1024:1024:1024:1901" --wdir ./ --ptr-layer-number 4 --1stlayer-reconstruct-activation tanh --param-output-file sda.mdl
+Run_DNN
+--train-data "/home/du/Dropbox/workspace/DL/cmds/train.pickle.gz,partition=600m,random=true"  --valid-data "/home/du/Dropbox/workspace/DL/cmds/valid.pickle.gz,partition=600m,random=true"   --nnet-spec "784:1024:1024:1901"  --wdir ./  --param-output-file dnn.mdl
